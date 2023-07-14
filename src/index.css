@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+#openBtn {
+  width: 200px;
+  height: 40px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  background-color: rgb(69, 185, 147);
+  border-radius: 7px;
+  border: none;
+}
+.modalWrapper {
+  position: fixed;
+  inset: 0;
+}
+
+.modalBackground {
+  position: fixed;
+  z-index: 1; 
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* 設置modal內容框架 */
+.modal-content {
+  position: fixed;
+  z-index: 2; 
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  min-width: 200px;
+  max-width: 80%;
+  max-height: calc(100% - 60px);
+  overflow: auto;
+  background-color: #fefefe;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-button {
+  width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: gray;
+  border-radius: 5px;
+  
+}
+
+/* 設置關閉 */
+.closeBtn {
+  color: #aaaaaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
